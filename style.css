@@ -12,7 +12,7 @@
     justify-content: center;
     position: relative;
     margin: 0;
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Gilroy';
     box-sizing: border-box;
 }
@@ -64,7 +64,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     margin-top: -6vw;
 }
 
@@ -77,10 +77,6 @@
     max-width: 300px;
 }
 
-.stage-details-card:nth-child(2) img {
-    width: 60px;
-    height: 55px;
-}
 
 .stage-details-card h2 {
     margin-top: 10px;
@@ -92,15 +88,14 @@
 
 
 .stage-image {
-    width: 80px;
-    height: 55px;
+    height: 100px;
 }
 
 .description-ts5500-chars {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -108,12 +103,9 @@
     display: flex;
     flex-direction: column;
     /*margin: 53px;*/
+    width: 30%;
 }
 
-.stage-imageContainer {
-    width: 300px;
-    height: 400px;
-}
 
 .description-ts5500-chars-item p {
     width: 300px;
@@ -146,29 +138,62 @@
     flex-direction: column-reverse;
     top: -20px;
 }
+/*
+.stage-imageContainer {
+  width: 300px;
+  height: 400px;
+}
+*/
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
 
 @media screen and (width < 900px) {
     .description-ts5500-textContainer {
-        top: 40vw;
+        top: 42vw;
     }
 
     .stage-details {
         top: 15vw;
     }
 
-    .stage-details-card:nth-child(2) img {
-        width: 45px;
-        height: 42px;
-    }
-
-    .stage-image {
-        width: 50px;
-        height: 45px;
-    }
-
     .stand {
         margin-top: 150px !important;
     }
+}
+
+@media screen and (width < 769px) {
+  .description-ts5500-chars-item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .description-ts5500-chars-item:nth-child(2) {
+        flex-direction: column;
+        top: 0;
+    }
+
+    .description-ts5500-chars-item:nth-child(5) {
+        flex-direction: column;
+        top: 0;
+    }
+
+    .description-ts5500-chars-item:nth-child(8) {
+        flex-direction: column;
+        top: 0;
+    }
+
+  .description-ts5500-chars-item p {
+    width: 100%;
+  }
+}
+
+@media screen and (width < 710px) {
+.stage-details {
+    top: 18vw;
+}
 }
 
 @media screen and (width < 619px) {
@@ -183,32 +208,9 @@
         margin-top: 0;
     }
 
-    .description-ts5500-textContainer h1 {
-        font-size: 30px !important;
-    }
-
     .description-ts5500-logo {
         width: 53px;
         height: 16px;
-    }
-
-    .description-ts5500-textContainer p {
-        font-size: 12px;
-    }
-
-    .description-ts5500-chars-item:nth-child(2) {
-        flex-direction: column;
-        top: 0;
-    }
-
-    .description-ts5500-chars-item:nth-child(5) {
-        flex-direction: column;
-        top: 0;
-    }
-
-    .description-ts5500-chars-item:nth-child(8) {
-        flex-direction: column;
-        top: 0;
     }
 }
 
@@ -226,7 +228,7 @@
 
 @media screen and (width < 420px) {
     .stage-details {
-        top: 30vw;
+        top: 34vw;
     }
 }
 
